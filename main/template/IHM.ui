@@ -1,0 +1,2028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PeelTest</class>
+ <widget class="QDialog" name="PeelTest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1290</width>
+    <height>659</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Peel Test</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: white;</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidgetMain">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>891</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <property name="locale">
+    <locale language="French" country="France"/>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tabControl">
+    <attribute name="title">
+     <string>Control</string>
+    </attribute>
+    <widget class="QLabel" name="labelPlateau">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>30</y>
+       <width>191</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>PibotoLt</family>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Tray Control&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonVisGauche">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>80</y>
+       <width>151</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito Sans</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>&lt;&lt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="buttonVisDroite">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>80</y>
+       <width>151</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito Sans</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>&gt;&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushRemiseEnPosition">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>220</y>
+       <width>221</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito Sans</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Reset to
+ Position</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabParametre">
+    <attribute name="title">
+     <string>Settings</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidgetSetting">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>861</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Sensor selection</string>
+      </attribute>
+      <widget class="QFrame" name="frameCalibration1_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>841</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(214, 214, 214);
+color: white;
+border-radius: 12px; 
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="labelSensorSelection">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>481</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black;
+font-weight: bold;</string>
+        </property>
+        <property name="text">
+         <string>Click on sensor name to select or deselect</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>641</width>
+          <height>371</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>images/MachineVue.jpg</pixmap>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor12">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>20</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 12</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor11">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>60</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 11</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor10">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>100</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 10</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor9">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>140</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 9</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor8">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>180</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 8</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor7">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>220</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 7</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor6">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>260</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 6</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor5">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>300</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 5</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor4">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>340</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 4</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor3">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>380</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 3</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor2">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>420</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 2</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor1">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>460</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 1</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="checkBoxSensor13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>280</y>
+          <width>131</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Sensor 13</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Peeling data</string>
+      </attribute>
+      <widget class="QFrame" name="frameSetting">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>841</width>
+         <height>501</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(214, 214, 214);
+color: white;
+border-radius: 12px; 
+</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black</string>
+        </property>
+        <property name="text">
+         <string>Width of conductor in mm</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>110</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black</string>
+        </property>
+        <property name="text">
+         <string>Pulling speed in mm/min</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>20</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black</string>
+        </property>
+        <property name="text">
+         <string>Pulling length in mm</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="warningLabelRibbon">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>60</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 183, 37);
+color: white;
+border-radius: 12px; 
+</string>
+        </property>
+        <property name="text">
+         <string>     ⚠️ &gt; 0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="warningLabelVitesse">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>150</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 183, 37);
+color: white;
+border-radius: 12px; </string>
+        </property>
+        <property name="text">
+         <string>         ⚠️
+  10&lt;x&lt;300</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="warningLabelDistance">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>60</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 183, 37);
+color: white;
+border-radius: 12px; </string>
+        </property>
+        <property name="text">
+         <string>         ⚠️
+   0&lt;x&lt;230</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonParametrage">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>230</y>
+          <width>181</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Confirm</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonReset">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>230</y>
+          <width>181</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Nunito Sans</family>
+          <pointsize>14</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+        </property>
+        <property name="text">
+         <string>Reset values</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditRibbon">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+color: black;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditVitesse">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>150</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+color: black;</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditDistance">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>60</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+color: black;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>110</y>
+          <width>241</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black</string>
+        </property>
+        <property name="text">
+         <string>Threshold value</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEditCritere">
+        <property name="geometry">
+         <rect>
+          <x>420</x>
+          <y>150</y>
+          <width>201</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+color: black;</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="warningLabelCritere">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>150</y>
+          <width>101</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 183, 37);
+color: white;
+border-radius: 12px; 
+</string>
+        </property>
+        <property name="text">
+         <string>     ⚠️ &gt; 0</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelOutputTypeResult">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>240</y>
+          <width>271</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: black</string>
+        </property>
+        <property name="text">
+         <string>Get results in N/mm</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frameRadioButton">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>230</y>
+          <width>41</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white;
+color: black;
+border-radius: 12px; 
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QRadioButton" name="radioButtonResult">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>5</y>
+           <width>21</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QRadioButton:enabled{
+	background-color: white;
+	color: black;
+	border-radius: 12px; 
+}
+
+QRadioButton:disabled{
+	color: rgb(214, 214, 214);
+	border-radius: 12px; 
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabResultat">
+    <attribute name="title">
+     <string>Result</string>
+    </attribute>
+    <widget class="QPushButton" name="afficherGraphique">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>60</y>
+       <width>231</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito Sans</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Show Graph</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="enregistrerSous">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>230</y>
+       <width>231</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito Sans</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Save As</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Help</string>
+    </attribute>
+    <widget class="QFrame" name="frameHelp">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>381</width>
+       <height>171</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(214, 214, 214);
+color: white;
+border-radius: 12px; 
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>431</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;</string>
+      </property>
+      <property name="text">
+       <string>Please check documentations via QR Code</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>40</y>
+        <width>431</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black;</string>
+      </property>
+      <property name="text">
+       <string>Contact : customer.care@agytech.fr</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>290</y>
+       <width>301</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/logo.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>80</y>
+       <width>421</width>
+       <height>421</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: black;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>images/DocumentationQrCode.jpg</pixmap>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabCalibration">
+    <attribute name="title">
+     <string>Agytech Only</string>
+    </attribute>
+    <widget class="QFrame" name="frameSetting_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>871</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(214, 214, 214);
+color: white;
+border-radius: 12px; 
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="CelluleCalibration1">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>70</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 1 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="warningCalibration">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>270</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 183, 37);
+color: white;
+border-radius: 12px; 
+</string>
+      </property>
+      <property name="text">
+       <string>Incorrect access</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonCalibration">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>200</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Nunito Sans</family>
+        <pointsize>14</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+      </property>
+      <property name="text">
+       <string>Confirm</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration1">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>100</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>130</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 2 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration2">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>160</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration3">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>190</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 3 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>220</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration4">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>250</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 4 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration4">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>280</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>70</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 5 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration5">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>100</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration6">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>130</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 6 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration6">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>160</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration7">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>190</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 7 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration7">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>220</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration8">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 8 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration10">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>130</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 10 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration11">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>190</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 11 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration12">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>250</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 12 :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration13">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>70</y>
+        <width>171</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 13 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration12">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>280</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration9">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>100</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration9">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>70</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Cellule Calibration 9 :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration8">
+      <property name="geometry">
+       <rect>
+        <x>250</x>
+        <y>280</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration10">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>160</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration13">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>100</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibration11">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>220</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibrationPassword">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>130</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>Password calibration :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEditCelCalibrationPassword">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>160</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: white;
+color: black;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="CelluleCalibration1_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>721</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: red</string>
+      </property>
+      <property name="text">
+       <string>MACHINE CALIBRATION - FOR AGYTECH USE ONLY / TEST 500 Newtons</string>
+      </property>
+     </widget>
+     <zorder>CelluleCalibration1</zorder>
+     <zorder>warningCalibration</zorder>
+     <zorder>pushButtonCalibration</zorder>
+     <zorder>CelluleCalibration2</zorder>
+     <zorder>CelluleCalibration3</zorder>
+     <zorder>CelluleCalibration4</zorder>
+     <zorder>CelluleCalibration5</zorder>
+     <zorder>CelluleCalibration6</zorder>
+     <zorder>CelluleCalibration7</zorder>
+     <zorder>CelluleCalibration8</zorder>
+     <zorder>CelluleCalibration10</zorder>
+     <zorder>CelluleCalibration11</zorder>
+     <zorder>CelluleCalibration12</zorder>
+     <zorder>CelluleCalibration13</zorder>
+     <zorder>CelluleCalibration9</zorder>
+     <zorder>CelluleCalibrationPassword</zorder>
+     <zorder>CelluleCalibration1_2</zorder>
+     <zorder>lineEditCelCalibration1</zorder>
+     <zorder>lineEditCelCalibration2</zorder>
+     <zorder>lineEditCelCalibration3</zorder>
+     <zorder>lineEditCelCalibration4</zorder>
+     <zorder>lineEditCelCalibration5</zorder>
+     <zorder>lineEditCelCalibration6</zorder>
+     <zorder>lineEditCelCalibration7</zorder>
+     <zorder>lineEditCelCalibration8</zorder>
+     <zorder>lineEditCelCalibration9</zorder>
+     <zorder>lineEditCelCalibration10</zorder>
+     <zorder>lineEditCelCalibration11</zorder>
+     <zorder>lineEditCelCalibration12</zorder>
+     <zorder>lineEditCelCalibration13</zorder>
+     <zorder>lineEditCelCalibrationPassword</zorder>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushStart">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>390</y>
+     <width>181</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nunito Sans</family>
+     <pointsize>28</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(42, 225, 88);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>▶</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushStop">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>170</y>
+     <width>181</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nunito Sans</family>
+     <pointsize>48</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(240, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>⏹</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushExit">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>520</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nunito Sans</family>
+     <pointsize>14</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="progressBar">
+   <property name="geometry">
+    <rect>
+     <x>990</x>
+     <y>30</y>
+     <width>251</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QProgressBar::chunk:horizontal {
+	text-align: center;
+	background-color: rgb(42, 225, 88);
+	border-radius: 7px;
+	
+}</string>
+   </property>
+   <property name="value">
+    <number>24</number>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushEnglish">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>80</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>EN</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushFrancais">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>80</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>FR</string>
+   </property>
+  </widget>
+
+  <widget class="QPushButton" name="pushPause">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>280</y>
+     <width>181</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Nunito Sans</family>
+     <pointsize>48</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton:enabled{
+	background-color: rgb(255, 183, 37);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+   </property>
+   <property name="text">
+    <string>⏸</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
