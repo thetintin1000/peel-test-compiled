@@ -1080,6 +1080,7 @@ QRadioButton:disabled{
     <attribute name="title">
      <string>Result</string>
     </attribute>
+
     <widget class="QPushButton" name="afficherGraphique">
      <property name="geometry">
       <rect>
@@ -1114,11 +1115,47 @@ QPushButton:disabled{
       <string>Show Graph</string>
      </property>
     </widget>
+
+    <widget class="QPushButton" name="saveGraphique">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>200</y>
+       <width>311</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Nunito Sans</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton:enabled{
+	background-color: rgb(85, 85, 85);
+	color: white;
+	border-radius: 12px; 
+}
+
+QPushButton:disabled{
+	background-color: rgb(214, 214, 214);
+	color: white;
+	border-radius: 12px; 
+}</string>
+     </property>
+     <property name="text">
+      <string>Save Graph</string>
+     </property>
+    </widget>
+
     <widget class="QPushButton" name="enregistrerSous">
      <property name="geometry">
       <rect>
        <x>300</x>
-       <y>230</y>
+       <y>340</y>
        <width>311</width>
        <height>121</height>
       </rect>
@@ -1268,7 +1305,7 @@ border-radius: 12px;
    </widget>
    <widget class="QWidget" name="tabCalibration">
     <attribute name="title">
-     <string>Agytech Only</string>
+     <string>Calibration</string>
     </attribute>
     <widget class="QFrame" name="frameSetting_2">
      <property name="geometry">
@@ -1327,7 +1364,7 @@ border-radius: 12px;
         <x>70</x>
         <y>70</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1358,7 +1395,7 @@ border-radius: 12px;
         <x>70</x>
         <y>130</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1390,7 +1427,7 @@ border-radius: 12px;
         <x>70</x>
         <y>190</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1422,7 +1459,7 @@ border-radius: 12px;
         <x>70</x>
         <y>250</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1454,7 +1491,7 @@ border-radius: 12px;
         <x>260</x>
         <y>70</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1486,7 +1523,7 @@ border-radius: 12px;
         <x>260</x>
         <y>130</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1518,7 +1555,7 @@ border-radius: 12px;
         <x>260</x>
         <y>190</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1550,7 +1587,7 @@ border-radius: 12px;
         <x>260</x>
         <y>250</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1582,7 +1619,7 @@ border-radius: 12px;
         <x>450</x>
         <y>70</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1614,7 +1651,7 @@ border-radius: 12px;
         <x>450</x>
         <y>130</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1646,7 +1683,7 @@ border-radius: 12px;
         <x>450</x>
         <y>190</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1678,7 +1715,7 @@ border-radius: 12px;
         <x>450</x>
         <y>250</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1710,7 +1747,7 @@ border-radius: 12px;
         <x>640</x>
         <y>70</y>
         <width>161</width>
-        <height>31</height>
+        <height>40</height>
        </rect>
       </property>
       <property name="font">
@@ -1741,7 +1778,7 @@ border-radius: 12px;
        <rect>
         <x>640</x>
         <y>130</y>
-        <width>161</width>
+        <width>250</width>
         <height>31</height>
        </rect>
       </property>
@@ -1772,7 +1809,7 @@ border-radius: 12px;
        <rect>
         <x>640</x>
         <y>190</y>
-        <width>161</width>
+        <width>250</width>
         <height>31</height>
        </rect>
       </property>
