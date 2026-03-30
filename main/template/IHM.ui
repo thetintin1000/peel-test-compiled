@@ -1852,7 +1852,7 @@ border-radius: 12px;
        <string notr="true">color: black</string>
       </property>
       <property name="text">
-       <string>Enter code: "ready"</string>
+       <string>Security code:</string>
       </property>
      </widget>
 
